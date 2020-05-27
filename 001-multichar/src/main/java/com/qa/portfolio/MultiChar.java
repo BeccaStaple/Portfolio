@@ -12,16 +12,7 @@ public class MultiChar {
 	 */
 	public String multiChar(String input) {
 		// TODO
-		//String subString = input.substring(0 * 3,1);
 		
-		
-//		for (int i = 0; i < input.length(); i++) {
-//			if (input.substring(i, i++).matches(input.substring(i))) {
-//				System.out.println(input.substring(i, i++) + input.substring(i, i++));
-//			} else {
-//				System.out.println(input.substring(i, i++));
-//			}
-//		}
 		StringBuilder strbld = new StringBuilder(input.length());
 		for (int i = 0; i < input.length(); i++) {
 			char a = input.charAt(i);
