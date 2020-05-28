@@ -18,11 +18,9 @@ public class MultiChar {
 			char a = input.charAt(i);
 			strbld.append(a);
 			if (Character.isLetter(a)) {
-				strbld.append(a);
+				strbld.append(a).append(a);
 			}
-			if (Character.isLetter(a)) {
-				strbld.append(a);
-			}
+			
 			if (a == '-') {
 				strbld.append(a).append(a);
 			}
