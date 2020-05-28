@@ -15,6 +15,25 @@ public class FizzBuzz {
 	 * @return "fizz", "buzz", "fizzbuzz" or numeric value as a string
 	 */
 	public String fizzBuzz(int number) {
-    	return "";
+		//if statement 
+		
+		if (number % 5 ==0 && number % 3 ==0) {
+			return "fizzbuzz";
+		}
+		
+		if (number % 3 == 0) {
+			return "fizz";
+		}
+			
+		if (number % 5 == 0) {
+			return "buzz";
+		} 
+		
+		if (number % 5 != 0 && number % 3 !=0) {
+			return Integer.toString(number);
+		}
+		return null;
+		
+    	
 	}
 }
