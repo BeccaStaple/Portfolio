@@ -10,7 +10,11 @@ public class EndsWith {
 	 * @return true is sentence ends in java or it will return false
 	 */
 	public boolean endsJava(String sentence) {
-		return false;
+		String result = sentence.toLowerCase();
+		if (result.endsWith("java")) {
+			return true;
+		} else;
+			return false;
 	}
 
 }
