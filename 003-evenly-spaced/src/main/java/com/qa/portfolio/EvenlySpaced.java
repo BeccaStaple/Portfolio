@@ -13,6 +13,7 @@ public class EvenlySpaced {
 	 */
 	public boolean evenlySpaced(int num1, int num2, int num3) {
 		//TODO
+<<<<<<< HEAD
 		int space = num2 - num1;
 		int nxtSpace = num1 - num3;
 		if (num3 == num2 + space || num2 == num1 + nxtSpace) {
@@ -20,5 +21,8 @@ public class EvenlySpaced {
 		} else {
 			return false;
 		}
+=======
+		return false;
+>>>>>>> d5ba18acb02557d02ef8144461d51a5622760c9d
 	}
 }

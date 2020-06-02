@@ -10,6 +10,10 @@ public class AmSearch {
 	 * @return the count of "am" words
 	 */
 	public int amSearch(String sentence) {
+		boolean am = sentence.contains("am ");
+		if (am) {
+			return 1;
+		}
 		return -1;
 	}
 }

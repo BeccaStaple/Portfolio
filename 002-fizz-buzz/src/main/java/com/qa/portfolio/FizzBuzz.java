@@ -15,6 +15,7 @@ public class FizzBuzz {
 	 * @return "fizz", "buzz", "fizzbuzz" or numeric value as a string
 	 */
 	public String fizzBuzz(int number) {
+<<<<<<< HEAD
 		//if statement 
 		
 		if (number % 5 ==0 && number % 3 ==0) {
@@ -35,5 +36,8 @@ public class FizzBuzz {
 		return null;
 		
     	
+=======
+    	return "";
+>>>>>>> d5ba18acb02557d02ef8144461d51a5622760c9d
 	}
 }
