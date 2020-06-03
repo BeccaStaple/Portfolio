@@ -10,10 +10,13 @@ public class AmSearch {
 	 * @return the count of "am" words
 	 */
 	public int amSearch(String sentence) {
-		boolean am = sentence.contains("am ");
-		if (am) {
-			return 1;
+		String result = sentence.toLowerCase();
+		String[] search = sentence.split("am");
+		if (search.contains("am")) {
+			int count = 1;
+			return count;
+		} else {
+			return 0;
 		}
-		return -1;
 	}
 }
