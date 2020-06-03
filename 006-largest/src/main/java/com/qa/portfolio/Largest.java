@@ -18,6 +18,15 @@ public class Largest {
 	 * @return the largest sum of the units of the numbers
 	 */
 	public int largest(String numberList) {
-		return 0;
+		
+		String[] strings = numberList.split("");
+		// now it's an int
+		int toInt = Integer.parseInt(numberList);
+		//my toInt needs to be split and added
+		while (toInt > 0) {
+		int result = toInt % 10;
+		    int newInt = result / 10;
+		    return newInt;
+		} 
 	}
 }
