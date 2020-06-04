@@ -21,15 +21,31 @@ public class Largest {
 		
 		char str1 = numberList.charAt(0);
 		char str2 = numberList.charAt(1);
+		char str3 = numberList.charAt(3);
+		char str4 = numberList.charAt(4);
+		char str5 = numberList.charAt(6);
+		char str6 = numberList.charAt(7);
 		
 		int toInt = Character.getNumericValue(str1);
 		int toInt2 = Character.getNumericValue(str2);
+		int toInt3 = Character.getNumericValue(str3);
+		int toInt4 = Character.getNumericValue(str4);
+		int toInt5 = Character.getNumericValue(str5);
+		int toInt6 = Character.getNumericValue(str6);
 		
-		int result = toInt + toInt2;
+		int num1 = toInt + toInt2;
+		int num2 = toInt3 + toInt4;
+		int num3 = toInt5 + toInt6;
 		
-		return result;
-		
-		
+		if (num1 > num2 && num1 >num3) {
+			return num1;
+		}
+		if (num2 > num1 && num2 > num3) {
+			return num2;
+		}
+		if (num3 > num1 && num3 > num2) {
+			return num3;
+		}
 		
 	}
 }
