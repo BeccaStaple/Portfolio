@@ -19,14 +19,17 @@ public class Largest {
 	 */
 	public int largest(String numberList) {
 		
-		String[] strings = numberList.split("");
-		// now it's an int
-		int toInt = Integer.parseInt(numberList);
-		//my toInt needs to be split and added
-		while (toInt > 0) {
-		int result = toInt % 10;
-		    int newInt = result / 10;
-		    return newInt;
-		} 
+		char str1 = numberList.charAt(0);
+		char str2 = numberList.charAt(1);
+		
+		int toInt = Character.getNumericValue(str1);
+		int toInt2 = Character.getNumericValue(str2);
+		
+		int result = toInt + toInt2;
+		
+		return result;
+		
+		
+		
 	}
 }
